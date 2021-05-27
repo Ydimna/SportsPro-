@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SportsPro.Domain.Authentication>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3><i class="fas fa-key"></i> Register Manager</h3>
+
+<br/>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                <a class="edit-btn" asp-action="Edit" asp-route-id="@item.AuthenticationID">Edit</a> 
+                
+                <a class="delete-btn" asp-action="Delete" asp-route-id="@item.AuthenticationID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+</br>
+<p>
+    <a class="create-btn" asp-action="Create">Create New</a>
+</p>

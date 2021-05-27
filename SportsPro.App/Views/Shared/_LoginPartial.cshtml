@@ -1,0 +1,26 @@
+﻿<ul class="navbar-nav user-navigation">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark welcome" title="Welcome"><i class="fas fa-user"></i> Welcome @User.Identity.Name</a>
+        </li>
+        <li class="nav-item">
+            <form class="logout form-inline" asp-controller="User" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home")">
+                <button type="submit" class="nav-link btn btn-link text-dark"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+            <style type="text/css">           
+                ul.user-navigation {
+                    border-radius: 20px 0 0 20px;
+                }
+             </style>
+        <li class="nav-item lgn" style="margin-right: 10px; ">
+            <a class="nav-link text-dark login-link" asp-controller="User" asp-action="Login"><i class="fas fa-user"></i> Login</a>
+        </li>
+    }
+
+
+</ul>

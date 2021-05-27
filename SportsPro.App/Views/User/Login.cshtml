@@ -1,0 +1,72 @@
+﻿@model SportsPro.Domain.Authentication
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!-- SPECIFIC PAGE STYLES -->
+
+<style type="text/css">
+    .container {
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 0 !important;
+    }
+
+    h3 {
+        color: #000;
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    label, input {
+        float: left;
+        width: 100%;
+    }
+
+    label {
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    form {
+        padding: 100px;
+        float: left;
+    }
+
+    .btn-primary.login-button {
+        margin-top: 15px;
+        font-size: 21px;
+    }
+
+
+    div.row {
+        margin: 0 !important;
+    }
+
+    .pb-3 {
+        padding-bottom: 0 !important;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-6" style="box-shadow: 2px 2px 35px #ddd inset">
+        <form asp-action="Login">
+            <h3>Login</h3>
+
+
+            <label><i class="fa fa-user"></i> Username:</label>
+            <input type="text" asp-for="Username" />
+
+            <label><i class="fa fa-lock"></i> Password:</label>
+            <input type="password" asp-for="Password" TextMode="{Binding Password}" />
+
+            <input type="submit" value="Login" class="btn btn-primary login-button" />
+        </form>
+    </div>
+    <div class="col-md-6" style="padding: 0;">
+        <div class="login-background"></div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- FRONTPAGE SPECIFIC STYLES -->
+<style type="text/css">
+    div.container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .btn-primary {
+        font-family: Lato;
+        font-size: 23px;
+    }
+
+    btn-primary:hover {
+        opacity: 0.7 !important;
+    }
+
+    .container {
+        margin: 0 !important;
+    }
+</style>
+
+<section>
+    <div class="jumbotron frontpage">
+        <h1 class="display-4">PROSports eManager</h1>
+        <p>The #1 web solution for sports-based businesses to efficently manage customer data.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg create-an-account" asp-controller="User" asp-action="Login" role="button">Login to eManager <i class="fas fa-sign-in-alt"></i></a>
+        </p>
+        <div class="colour-scheme"></div>
+    </div>
+
+
+</section>
+
+<div class="fp-container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="feature-box">
+                <i class="fa fa-box"></i>
+                <h1 class="display-4">Products</h1>
+                <p>Manage all products across your business including the name and price.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="feature-box">
+                <i class="fa fa-user"></i>
+                <h1 class="display-4">Customers</h1>
+                <p>Manage all your customers details easily and effectively.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="feature-box">
+
+                <i class="fa fa-box"></i>
+                <h1 class="display-4">Incidents</h1>
+                <p>Keep track of incidents that occur across your business operations.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="feature-box">
+
+                <i class="fa fa-users"></i>
+                <h1 class="display-4">User manager</h1>
+                <p>Create, edit and delete all users across your system.</p>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h1 class="display-4">Permissions</h1>
+                <p>Control user permissions to protect specific pages from access.</p>
+            </div>
+        </div>
+    </div>
+</div>

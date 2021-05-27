@@ -1,0 +1,462 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+/* #################################################### */
+/* #################################################### */
+/* These are the changes to the stylesheet by PROSports */
+/* #################################################### */
+/* #################################################### */
+
+h4.bg-light {
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+} 
+
+header nav.navbar div.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.table td {
+    border: 0;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+footer {
+    background: #FAFAFA;
+}
+
+div.colour-scheme {
+    background: rgba(0,101,204, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 350px rgb(0 1 104) inset;
+}
+
+.footer .container {
+    margin-top: 0;
+}
+
+h5 {
+    color: #FFF !important;
+    background: firebrick;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    border: 0 !important;
+}
+
+.btn-danger {
+    border: 0 !important;
+    font-weight: 500 !important;
+}
+
+.edit-btn:hover, .delete-btn:hover, .create-btn:hover {
+    color: #FFF;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.edit-btn {
+    background: #ff6a00;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.delete-btn {
+    background: #e52020;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.create-btn {
+    background: #19b5cb;
+    color: #FFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+h3, h4 {
+    font-size: 40px;
+    font-family: Lato;
+}
+
+nav.navbar {
+    background: #FFF;
+    border: 0 !important;
+    margin: 0 !important;
+    background-color: #FFF !important;
+    padding: 0;
+    color: #FFF !important;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.table thead {
+    background: #114491;
+}
+
+    .table thead th {
+        color: #FFF;
+        border: 0;
+    }
+
+nav.navbar li a {
+    font-family: Lato;
+    color: #000 !IMPORTANT;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.navbar-brand img {
+    width: 70%;
+}
+
+.navbar-brand {
+    background: #114491;
+    padding: 16px 0;
+}
+
+div.container {
+    margin-top: 60px;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* LOGIN NAVIGATION */
+
+div.main-navigation a.nav-item {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+div.main-navigation a.nav-item span {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-top: 10px;
+    font-family: lato;
+    font-size: 18px;
+}
+
+div.main-navigation a.nav-item i {
+    color: #777;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+div.main-navigation a:hover {
+    color: #114491;
+}
+
+    div.main-navigation a:hover i {
+        color: #114491;
+        top: -3px;
+        transition: 0.2s top;
+    }
+
+h3 i {
+    background: #FCFCFC;
+    padding: 20px 24px;
+    border: 1px solid #EEE;
+    border-radius: 50%;
+    color: #888;
+}
+
+ul.user-navigation {
+    background: #FAFAFA;
+    display: inline-block;
+    padding: 12px;
+}
+
+ul.user-navigation li a.welcome i, ul.user-navigation .login-link i, ul.user-navigation form.logout button i {
+    margin-right: 5px;
+}
+
+ul.user-navigation form.logout button {
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+ul.user-navigation li.lgn {
+    margin-right: 10px;
+}
+
+
+/* FRONT PAGE */
+
+div.jumbotron.frontpage {
+    background: url(https://images.pexels.com/photos/139762/pexels-photo-139762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0;
+    box-shadow: 80px 60px 250px #000 inset;
+    padding: 160px 120px;
+}
+
+div.jumbotron.frontpage h1, div.jumbotron.frontpage p {
+    color: #FFF;
+}
+
+div.jumbotron.frontpage {
+    position: relative;
+}
+
+div.jumbotron.frontpage h1, div.jumbotron.frontpage p, div.jumbotron.frontpage a {
+    position: relative;
+    z-index: 2;
+}
+
+div.jumbotron.frontpage p {
+    text-shadow: 2px 2px 4px #777;
+    font-size: 25px;
+    font-family: Lato;
+}
+
+div.jumbotron.frontpage h1 {
+    font-size: 75px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px #777;
+    font-family: 'Lato';
+}
+
+.fp-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    margin-top: -70px;
+}
+
+div.feature-box {
+    border: 3px solid #EEE;
+    font-family: lato;
+    background: #FFF;
+    text-align: center;
+    padding: 20px 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+div.feature-box i {
+    font-size: 80px;
+    text-align: center;
+}
+
+div.feature-box h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+div.feature-box p {
+    font-size: 20px;
+}
+
+.btn-primary.create-an-account {
+    box-shadow: unset;
+    background: #a4a;
+    border: 0;
+    padding: 15px 45px;
+}
+
+.btn-primary.login-to-account {
+    box-shadow: unset;
+    border: 0;
+    padding: 15px 45px;
+}
+
+div.colour-scheme {
+    background: rgba(0,101,204, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 350px rgb(0 1 104) inset;
+}
+
+/* LOGIN SECTION */
+
+div.login-background {
+    background-size: cover;
+    background: url(https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center center;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div.login-background p, div.login-background form {
+    position: relative;
+    z-index: 2;
+}
+
+div.login-background h3 {
+    font-size: 70px;
+}
+
+/* INCIDENT MANAGER */
+
+div.incident-navigation {
+    float: left;
+    width: 100%;
+    background: #EEE;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+div.incident-navigation a {
+    color: #000;
+    padding: 10px 20px;
+    float: left;
+    font-family: Lato;
+    font-size: 18px;
+}
+
+div.incident-navigation a.selected {
+    background: #62c4e9;
+    color: #FFF;
+}
+
+div.incident-navigation a.all.selected {
+    border-radius: 10px 0 0 10px;
+}
+
+.border-top{
+    position:absolute;
+    margin-bottom: 2vh;
+}
+
+.col-md-12 {
+    position: absolute;
+    margin-top: 1vh;
+    left: -1vw;
+    width: 70vw;
+    height: 70vh;
+    margin-left: 20vw;
+    background-color: #95afc0;
+    line-height: 4.5vh;
+    padding: 2vh;
+    border-radius: 1.5vh;
+}
+
+.para {
+    position: absolute;
+    margin-top: 4vh;
+    font-size: 22px;
+    color: #130f40;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+.tTitle {
+    color: #30336b;
+    letter-spacing: 0.5vh;
+    margin-left: 13vw;
+}

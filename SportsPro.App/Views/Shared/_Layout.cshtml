@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SportsPro.App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href='~/css/site.css?v=@Guid.NewGuid().ToString()' />
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- FONT AWESOME -->
+    
+    <script src="https://kit.fontawesome.com/a9160c819c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="/images/prosports-logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse main-navigation">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <a class="nav-item" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            <span>Home</span>
+                        </a>
+                        <a class="nav-item" asp-area="" asp-controller="Products" asp-action="Index">
+                            <i class="fas fa-box" aria-hidden="true"></i>
+                            <span>Products</span>
+                        </a>
+                        <a class="nav-item" asp-area="" asp-controller="Technicien" asp-action="Index">
+                            <i class="fas fa-user-astronaut" aria-hidden="true"></i>
+                            <span>Technicians</span>
+                        </a>
+                        <a class="nav-item" asp-area="" asp-controller="Customer" asp-action="Index">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <span>Customers</span>
+                        </a>
+
+                        <a class="nav-item" asp-area="" asp-controller="Incidents" asp-action="Index">
+                            <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                            <span>Incidents</span>
+                        </a>
+
+                        <a class="nav-item" asp-area="" asp-controller="Registration" asp-action="Index">
+                            <i class="fas fa-paste" aria-hidden="true"></i>
+                            <span>Registrations</span>
+                        </a>
+                        <a class="nav-item" asp-area="" asp-controller="Home" asp-action="About">
+                            <i class="fas fa-address-card" aria-hidden="true"></i>
+                            <span>About</span>
+                        </a>
+                        <a id="us" class="nav-item" asp-area="" asp-controller="Authentication" asp-action="Index">
+                            <i class="fas fa-key" aria-hidden="true"></i>
+                            <span >Create user</span>
+                        </a>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @if (TempData.ContainsKey("message"))
+    {
+        <h4 class="bg-light text-center p-3">@TempData["message"]</h4>
+    }
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - SportsPro - All rights reserved
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
